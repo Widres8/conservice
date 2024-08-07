@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@components/*": [
+        "src/components/*"
+      ],
+      "@images/*": [
+        "public/img/*"
+      ],
+      "@styles/*": [
+        "src/assets/styles/*"
+      ]
+    },
+    "strict": true,
+    "target": "es6"
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    "**/*.astro",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
+}

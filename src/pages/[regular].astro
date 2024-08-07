@@ -1,0 +1,24 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Default from "@/layouts/Default.astro";
+import { getSinglePage } from "@/shared/lib/contentParser.astro";
+
+export async function getStaticPaths() {
+  const pages = await getSinglePage("pages");
+
+  const paths = pages.map((page) => ({
+    params: {
+      regular: page.slug,
+    },
+    props: { page },
+  }));
+  return paths;
+}
+
+const { page } = Astro.props;
+const { title } = page.data;
+---
+
+<Layout title={title}>
+  <Default data={page} />
+</Layout>

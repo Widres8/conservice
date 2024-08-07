@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+
+import { SITE } from '@/shared';
+
+interface Props {
+    src?: any;
+    isNavbar?: boolean;
+    classList?: string[];
+}
+
+const { logo, logo_text, title } = SITE;
+
+const { src = logo, isNavbar = true, classList = [''] } = Astro.props;
+---
+
+<a href="/" class:list={[isNavbar ? "navbar-brand inline-block" : '', classList.join(' ')]}>
+    {
+        src ? (
+            <Image class={classList.join(',')}
+                src={src}
+                alt={title}
+            />
+        ) : logo_text ? (
+            logo_text
+        ) : (
+            title
+        )
+    }
+</a>

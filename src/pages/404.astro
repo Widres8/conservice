@@ -1,0 +1,24 @@
+---
+import Logo from "@/components/Logo.astro";
+import Layout from "@/layouts/Layout.astro";
+import { markdownify } from '@/shared';
+import { getEntryBySlug } from "astro:content";
+const entry = await getEntryBySlug("pages", "404");
+const { Content } = await entry.render();
+---
+
+<Layout>
+  <section class="mt-8 container h-[80vh] flex items-center justify-center">
+    <div class="text-center w-full ">
+      <Logo classList={['w-full', 'h-full']} />
+      <h1 class="my-8" set:html={markdownify(entry.data.title)} />
+      <div class="content">
+        <Content class="text-lg mt-12" />
+      </div>
+      <a class="btn btn-primary mt-12" href="/">
+        Ir al inicio
+      </a>
+    </div>
+    
+  </section>
+</Layout>
