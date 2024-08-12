@@ -5,4 +5,4 @@ subtitle: Visión de la empresa
 icon: '/img/images/about.jpg'
 ---
 
-__CONSERVICE__ empresa dedicada a la realización de obras civiles, instalaciones hidráulicas, sanitarias, gas, redes contra incendios, alcantarillado y soluciones constructivas, industriales y proyectos especiales, está formada por un grupo de profesionales dispuestos a ofrecer a las constructoras a nivel nacional el mejor servicio con calidad, compromiso y cumplimiento, logrando así generar rentabilidad, con un recurso humano calificado, certificado con experiencia.
+**CONSERVICE** se consolidará en el 2027 como una de las mejores empresas, líder a nivel nacional en el sector eléctrico, en telecomunicaciones y construcción, reconocida por la satisfacción, calidad y cumplimientos con los clientes por medio de procesos de gestión de certificados y un óptimo equipo de trabajo, respetuosos con el medio ambiente.

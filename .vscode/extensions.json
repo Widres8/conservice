@@ -1,0 +1,26 @@
+{
+    "recommendations": [
+        "aaron-bond.better-comments",
+        "angular.ng-template",
+        "codeium.codeium",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "esbenp.prettier-vscode",
+        "firsttris.vscode-jest-runner",
+        "johnpapa.angular-essentials",
+        "mhutchie.git-graph",
+        "miclo.sort-typescript-imports",
+        "mintlify.document",
+        "ms-vscode.js-debug-nightly",
+        "ms-vscode.live-server",
+        "ms-vscode.vscode-typescript-next",
+        "nrwl.angular-console",
+        "postman.postman-for-vscode",
+        "quicktype.quicktype",
+        "redhat.vscode-yaml",
+        "srmeyers.git-prefix",
+        "stuart.unique-window-colors",
+        "thinker.sort-json",
+        "yoavbls.pretty-ts-errors"
+    ]
+}
