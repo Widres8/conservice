@@ -1,5 +1,6 @@
 ---
 import Meta from '@/layouts/partials/Meta.astro';
+import { CONFIG } from '@/shared';
 import '@styles/main.scss';
 import Footer from './partials/Footer.astro';
 import Header from './partials/Header.astro';
@@ -12,6 +13,7 @@ export interface Props {
 }
 
 // distructure frontmatters
+const { whatsappLink } = CONFIG;
 const { title, lang = 'en' } = Astro.props;
 ---
 
@@ -32,7 +34,7 @@ const { title, lang = 'en' } = Astro.props;
         <Footer />
         <div class="relative">
             <a
-                href=" https://api.whatsapp.com/send?phone=573172489449&text=Hola%20*CONSERVICE*.%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20CONSERVICE%20https%3A%2F%2Fconservice.com.co"
+                href={whatsappLink}
                 target="_blank"
                 class="z-20 flex flex-col shrink-0 grow-0 justify-around fixed bottom-0 right-0 rounded-lg mr-1 mb-5">
                 <div class="align-center bg-green-500 border-4 border-white flex h-[60px] justify-center rounded-full text-white w-[60px]">

@@ -1,7 +1,8 @@
 ---
-import { markdownify } from '@/shared';
+import { CONFIG, markdownify } from '@/shared';
 import { Image } from 'astro:assets';
 
+const { whatsappLink } = CONFIG;
 const { callToAction } = Astro.props;
 ---
 
@@ -16,7 +17,7 @@ const { callToAction } = Astro.props;
                 <p class="mt-6" set:html={markdownify(callToAction?.content)} />
                 {
                     callToAction.button.enable && (
-                        <a class="btn btn-primary mt-4" href="https://api.whatsapp.com/send?phone=573172489449&text=Hola%20*CONSERVICE*.%20Necesito%20m%C3%A1s%20informaci%C3%B3n%20sobre%20CONSERVICE%20https%3A%2F%2Fconservice.com.co" target="_blank">
+                        <a class="btn btn-primary mt-4" href={whatsappLink} target="_blank">
                             {callToAction.button.label}
                         </a>
                     )
